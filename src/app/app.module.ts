@@ -9,6 +9,7 @@ import { OrbitControlComponent } from './orbit-control/orbit-control.component';
 import { LineComponent } from './line/line.component';
 import { BoxComponent } from './box/box.component';
 import { BaseComponent } from './base/base.component';
+import { TextComponent } from './text/text.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BaseComponent } from './base/base.component';
     OrbitControlComponent,
     LineComponent,
     BoxComponent,
-    BaseComponent
+    BaseComponent,
+    TextComponent
   ],
   imports: [
     BrowserModule

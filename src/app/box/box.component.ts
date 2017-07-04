@@ -42,7 +42,7 @@ export class BoxComponent implements AfterViewInit {
     self.camera = self.getCamera();
 
     self.geometry = self.getGeometry();
-    self.material = self.getMaterial();
+    self.material = self.getMeshLambertMaterial();
 
     self.mesh = new THREE.Mesh(self.geometry, self.material);
 
@@ -112,7 +112,7 @@ export class BoxComponent implements AfterViewInit {
   }
 
   getMaterial() {
-    var material = new THREE.MeshBasicMaterial({ color: 0x00fff0, wireframe: true });
+    var material = new THREE.MeshBasicMaterial({ color: 0x00fff0, side: THREE.DoubleSide });
     return material;
   }
 
@@ -131,14 +131,14 @@ export class BoxComponent implements AfterViewInit {
   }
 
   getMeshLambertMaterial() {
-    var material = new THREE.MeshLambertMaterial({ color: 0xdddddd, shading: THREE.FlatShading });
+    var material = new THREE.MeshLambertMaterial({ color: 0xdddddd, shading: THREE.FlatShading, side: THREE.DoubleSide });
 
 
     return material;
   }
 
   getGeometry() {
-    var geometry = new THREE.BoxBufferGeometry(1, 1, 1);
+    var geometry = new THREE.BoxBufferGeometry(3, .5, 1);
     return geometry;
   }
 
