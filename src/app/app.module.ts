@@ -5,13 +5,21 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SphereComponent } from './sphere/sphere.component';
 import { TriangleComponent } from './triangle/triangle.component';
+import { OrbitControlComponent } from './orbit-control/orbit-control.component';
+import { LineComponent } from './line/line.component';
+import { BoxComponent } from './box/box.component';
+import { BaseComponent } from './base/base.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SphereComponent,
-    TriangleComponent
+    TriangleComponent,
+    OrbitControlComponent,
+    LineComponent,
+    BoxComponent,
+    BaseComponent
   ],
   imports: [
     BrowserModule
