@@ -10,6 +10,7 @@ import { LineComponent } from './line/line.component';
 import { BoxComponent } from './box/box.component';
 import { BaseComponent } from './base/base.component';
 import { TextComponent } from './text/text.component';
+import { StepsComponent } from './steps/steps.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TextComponent } from './text/text.component';
     LineComponent,
     BoxComponent,
     BaseComponent,
-    TextComponent
+    TextComponent,
+    StepsComponent
   ],
   imports: [
     BrowserModule
