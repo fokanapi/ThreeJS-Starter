@@ -1,0 +1,2165 @@
+# Macro Begin: zz5.FCMacro
+import FreeCAD
+import Draft
+import Part
+doc=App.newDocument("stairbiz")
+points = list()
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(800,-20,0))
+	points.append(App.Vector(800,-851,0))
+	points.append(App.Vector(742,-851,0))
+	points.append(App.Vector(742,-880,0))
+	points.append(App.Vector(525,-880,0))
+	points.append(App.Vector(525,-20,0))
+	points.append(App.Vector(800,-20,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp1 = doc.addObject("Part::Feature", "C1")
+	comp1.Shape = body
+	Draft.move(doc.getObject("C1"),FreeCAD.Vector(0,0,2128),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(775,-851,0))
+	points.append(App.Vector(757,-851,0))
+	points.append(App.Vector(757,-20,0))
+	points.append(App.Vector(775,-20,0))
+	points.append(App.Vector(775,-851,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp2 = doc.addObject("Part::Feature", "C2")
+	comp2.Shape = body
+	Draft.move(doc.getObject("C2"),FreeCAD.Vector(0,0,1948),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(275,-880,0))
+	points.append(App.Vector(275,-20,0))
+	points.append(App.Vector(550,-20,0))
+	points.append(App.Vector(550,-880,0))
+	points.append(App.Vector(275,-880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp3 = doc.addObject("Part::Feature", "C3")
+	comp3.Shape = body
+	Draft.move(doc.getObject("C3"),FreeCAD.Vector(0,0,2308),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(525,-880,0))
+	points.append(App.Vector(507,-880,0))
+	points.append(App.Vector(507,-20,0))
+	points.append(App.Vector(525,-20,0))
+	points.append(App.Vector(525,-880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp4 = doc.addObject("Part::Feature", "C4")
+	comp4.Shape = body
+	Draft.move(doc.getObject("C4"),FreeCAD.Vector(0,0,2128),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(300,-20,0))
+	points.append(App.Vector(300,-880,0))
+	points.append(App.Vector(53,-880,0))
+	points.append(App.Vector(53,-851,0))
+	points.append(App.Vector(25,-851,0))
+	points.append(App.Vector(25,-20,0))
+	points.append(App.Vector(300,-20,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp5 = doc.addObject("Part::Feature", "C5")
+	comp5.Shape = body
+	Draft.move(doc.getObject("C5"),FreeCAD.Vector(0,0,2488),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(275,-880,0))
+	points.append(App.Vector(257,-880,0))
+	points.append(App.Vector(257,-20,0))
+	points.append(App.Vector(275,-20,0))
+	points.append(App.Vector(275,-880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp6 = doc.addObject("Part::Feature", "C6")
+	comp6.Shape = body
+	Draft.move(doc.getObject("C6"),FreeCAD.Vector(0,0,2308),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(50,-20,0))
+	points.append(App.Vector(50,-851,0))
+	points.append(App.Vector(-25,-851,0))
+	points.append(App.Vector(-25,-20,0))
+	points.append(App.Vector(50,-20,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp7 = doc.addObject("Part::Feature", "C7")
+	comp7.Shape = body
+	Draft.move(doc.getObject("C7"),FreeCAD.Vector(0,0,2668),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(25,-851,0))
+	points.append(App.Vector(7,-851,0))
+	points.append(App.Vector(7,-20,0))
+	points.append(App.Vector(25,-20,0))
+	points.append(App.Vector(25,-851,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp8 = doc.addObject("Part::Feature", "C8")
+	comp8.Shape = body
+	Draft.move(doc.getObject("C8"),FreeCAD.Vector(0,0,2488),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-25,-839,0))
+	points.append(App.Vector(-25,-929,0))
+	points.append(App.Vector(65,-929,0))
+	points.append(App.Vector(65,-839,0))
+	points.append(App.Vector(-25,-839,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 1251.42))
+	del points[:]
+	comp9 = doc.addObject("Part::Feature", "C9")
+	comp9.Shape = body
+	Draft.move(doc.getObject("C9"),FreeCAD.Vector(0,0,2362.78),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(884,-909,0))
+	points.append(App.Vector(33,-909,0))
+	points.append(App.Vector(33,-851,0))
+	points.append(App.Vector(0,-851,0))
+	points.append(App.Vector(0,0,0))
+	points.append(App.Vector(884,0,0))
+	points.append(App.Vector(884,-909,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp10 = doc.addObject("Part::Feature", "C10")
+	comp10.Shape = body
+	Draft.move(doc.getObject("C10"),FreeCAD.Vector(775,0,1948),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(33,-884,0))
+	points.append(App.Vector(33,-866,0))
+	points.append(App.Vector(864,-866,0))
+	points.append(App.Vector(864,-884,0))
+	points.append(App.Vector(33,-884,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp11 = doc.addObject("Part::Feature", "C11")
+	comp11.Shape = body
+	Draft.move(doc.getObject("C11"),FreeCAD.Vector(775,0,1768),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-45,-839,0))
+	points.append(App.Vector(-45,-929,0))
+	points.append(App.Vector(45,-929,0))
+	points.append(App.Vector(45,-839,0))
+	points.append(App.Vector(-45,-839,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 3135.4))
+	del points[:]
+	comp12 = doc.addObject("Part::Feature", "C12")
+	comp12.Shape = body
+	Draft.move(doc.getObject("C12"),FreeCAD.Vector(775,0,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-1000,0))
+	points.append(App.Vector(-20,-1000,0))
+	points.append(App.Vector(-20,-1275,0))
+	points.append(App.Vector(-880,-1275,0))
+	points.append(App.Vector(-880,-1000,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp13 = doc.addObject("Part::Feature", "C13")
+	comp13.Shape = body
+	Draft.move(doc.getObject("C13"),FreeCAD.Vector(1659,-884,1048),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-851,-1250,0))
+	points.append(App.Vector(-851,-1232,0))
+	points.append(App.Vector(-20,-1232,0))
+	points.append(App.Vector(-20,-1250,0))
+	points.append(App.Vector(-851,-1250,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp14 = doc.addObject("Part::Feature", "C14")
+	comp14.Shape = body
+	Draft.move(doc.getObject("C14"),FreeCAD.Vector(1659,-884,868),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-750,0))
+	points.append(App.Vector(-20,-750,0))
+	points.append(App.Vector(-20,-1025,0))
+	points.append(App.Vector(-880,-1025,0))
+	points.append(App.Vector(-880,-750,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp15 = doc.addObject("Part::Feature", "C15")
+	comp15.Shape = body
+	Draft.move(doc.getObject("C15"),FreeCAD.Vector(1659,-884,1228),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-1000,0))
+	points.append(App.Vector(-880,-982,0))
+	points.append(App.Vector(-20,-982,0))
+	points.append(App.Vector(-20,-1000,0))
+	points.append(App.Vector(-880,-1000,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp16 = doc.addObject("Part::Feature", "C16")
+	comp16.Shape = body
+	Draft.move(doc.getObject("C16"),FreeCAD.Vector(1659,-884,1048),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-500,0))
+	points.append(App.Vector(-20,-500,0))
+	points.append(App.Vector(-20,-775,0))
+	points.append(App.Vector(-880,-775,0))
+	points.append(App.Vector(-880,-500,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp17 = doc.addObject("Part::Feature", "C17")
+	comp17.Shape = body
+	Draft.move(doc.getObject("C17"),FreeCAD.Vector(1659,-884,1408),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-750,0))
+	points.append(App.Vector(-880,-732,0))
+	points.append(App.Vector(-20,-732,0))
+	points.append(App.Vector(-20,-750,0))
+	points.append(App.Vector(-880,-750,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp18 = doc.addObject("Part::Feature", "C18")
+	comp18.Shape = body
+	Draft.move(doc.getObject("C18"),FreeCAD.Vector(1659,-884,1228),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-250,0))
+	points.append(App.Vector(-20,-250,0))
+	points.append(App.Vector(-20,-525,0))
+	points.append(App.Vector(-880,-525,0))
+	points.append(App.Vector(-880,-250,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp19 = doc.addObject("Part::Feature", "C19")
+	comp19.Shape = body
+	Draft.move(doc.getObject("C19"),FreeCAD.Vector(1659,-884,1588),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-500,0))
+	points.append(App.Vector(-880,-482,0))
+	points.append(App.Vector(-20,-482,0))
+	points.append(App.Vector(-20,-500,0))
+	points.append(App.Vector(-880,-500,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp20 = doc.addObject("Part::Feature", "C20")
+	comp20.Shape = body
+	Draft.move(doc.getObject("C20"),FreeCAD.Vector(1659,-884,1408),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-20,-275,0))
+	points.append(App.Vector(-880,-275,0))
+	points.append(App.Vector(-880,-33,0))
+	points.append(App.Vector(-851,-33,0))
+	points.append(App.Vector(-851,0,0))
+	points.append(App.Vector(-20,0,0))
+	points.append(App.Vector(-20,-275,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp21 = doc.addObject("Part::Feature", "C21")
+	comp21.Shape = body
+	Draft.move(doc.getObject("C21"),FreeCAD.Vector(1659,-884,1768),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(-880,-250,0))
+	points.append(App.Vector(-880,-232,0))
+	points.append(App.Vector(-20,-232,0))
+	points.append(App.Vector(-20,-250,0))
+	points.append(App.Vector(-880,-250,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp22 = doc.addObject("Part::Feature", "C22")
+	comp22.Shape = body
+	Draft.move(doc.getObject("C22"),FreeCAD.Vector(1659,-884,1588),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(909,-4,0))
+	points.append(App.Vector(880,-4,0))
+	points.append(App.Vector(880,0,0))
+	points.append(App.Vector(49,0,0))
+	points.append(App.Vector(49,-33,0))
+	points.append(App.Vector(0,-33,0))
+	points.append(App.Vector(0,-835,0))
+	points.append(App.Vector(49,-835,0))
+	points.append(App.Vector(49,-884,0))
+	points.append(App.Vector(851,-884,0))
+	points.append(App.Vector(851,-835,0))
+	points.append(App.Vector(909,-835,0))
+	points.append(App.Vector(909,-4,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp23 = doc.addObject("Part::Feature", "C23")
+	comp23.Shape = body
+	Draft.move(doc.getObject("C23"),FreeCAD.Vector(759,-2134,868),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(884,-4,0))
+	points.append(App.Vector(866,-4,0))
+	points.append(App.Vector(866,-835,0))
+	points.append(App.Vector(884,-835,0))
+	points.append(App.Vector(884,-4,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp24 = doc.addObject("Part::Feature", "C24")
+	comp24.Shape = body
+	Draft.move(doc.getObject("C24"),FreeCAD.Vector(759,-2134,688),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(839,-823,0))
+	points.append(App.Vector(839,-913,0))
+	points.append(App.Vector(929,-913,0))
+	points.append(App.Vector(929,-823,0))
+	points.append(App.Vector(839,-823,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 1825))
+	del points[:]
+	comp25 = doc.addObject("Part::Feature", "C25")
+	comp25.Shape = body
+	Draft.move(doc.getObject("C25"),FreeCAD.Vector(759,-2134,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(61,45,0))
+	points.append(App.Vector(-29,45,0))
+	points.append(App.Vector(-29,-45,0))
+	points.append(App.Vector(61,-45,0))
+	points.append(App.Vector(61,45,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 2055.4))
+	del points[:]
+	comp26 = doc.addObject("Part::Feature", "C26")
+	comp26.Shape = body
+	Draft.move(doc.getObject("C26"),FreeCAD.Vector(759,-2134,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(61,-823,0))
+	points.append(App.Vector(-29,-823,0))
+	points.append(App.Vector(-29,-913,0))
+	points.append(App.Vector(61,-913,0))
+	points.append(App.Vector(61,-823,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 1825))
+	del points[:]
+	comp27 = doc.addObject("Part::Feature", "C27")
+	comp27.Shape = body
+	Draft.move(doc.getObject("C27"),FreeCAD.Vector(759,-2134,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(1025,880,0))
+	points.append(App.Vector(750,880,0))
+	points.append(App.Vector(750,20,0))
+	points.append(App.Vector(962,20,0))
+	points.append(App.Vector(962,49,0))
+	points.append(App.Vector(1025,49,0))
+	points.append(App.Vector(1025,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp28 = doc.addObject("Part::Feature", "C28")
+	comp28.Shape = body
+	Draft.move(doc.getObject("C28"),FreeCAD.Vector(1643,-3018,148),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(1000,880,0))
+	points.append(App.Vector(982,880,0))
+	points.append(App.Vector(982,49,0))
+	points.append(App.Vector(1000,49,0))
+	points.append(App.Vector(1000,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 154))
+	del points[:]
+	comp29 = doc.addObject("Part::Feature", "C29")
+	comp29.Shape = body
+	Draft.move(doc.getObject("C29"),FreeCAD.Vector(1643,-3018,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(500,880,0))
+	points.append(App.Vector(500,20,0))
+	points.append(App.Vector(775,20,0))
+	points.append(App.Vector(775,880,0))
+	points.append(App.Vector(500,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp30 = doc.addObject("Part::Feature", "C30")
+	comp30.Shape = body
+	Draft.move(doc.getObject("C30"),FreeCAD.Vector(1643,-3018,328),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(750,880,0))
+	points.append(App.Vector(732,880,0))
+	points.append(App.Vector(732,20,0))
+	points.append(App.Vector(750,20,0))
+	points.append(App.Vector(750,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp31 = doc.addObject("Part::Feature", "C31")
+	comp31.Shape = body
+	Draft.move(doc.getObject("C31"),FreeCAD.Vector(1643,-3018,148),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(250,880,0))
+	points.append(App.Vector(250,20,0))
+	points.append(App.Vector(525,20,0))
+	points.append(App.Vector(525,880,0))
+	points.append(App.Vector(250,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp32 = doc.addObject("Part::Feature", "C32")
+	comp32.Shape = body
+	Draft.move(doc.getObject("C32"),FreeCAD.Vector(1643,-3018,508),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(500,880,0))
+	points.append(App.Vector(482,880,0))
+	points.append(App.Vector(482,20,0))
+	points.append(App.Vector(500,20,0))
+	points.append(App.Vector(500,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp33 = doc.addObject("Part::Feature", "C33")
+	comp33.Shape = body
+	Draft.move(doc.getObject("C33"),FreeCAD.Vector(1643,-3018,328),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(275,880,0))
+	points.append(App.Vector(0,880,0))
+	points.append(App.Vector(0,49,0))
+	points.append(App.Vector(33,49,0))
+	points.append(App.Vector(33,20,0))
+	points.append(App.Vector(275,20,0))
+	points.append(App.Vector(275,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 32))
+	del points[:]
+	comp34 = doc.addObject("Part::Feature", "C34")
+	comp34.Shape = body
+	Draft.move(doc.getObject("C34"),FreeCAD.Vector(1643,-3018,688),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(250,880,0))
+	points.append(App.Vector(232,880,0))
+	points.append(App.Vector(232,20,0))
+	points.append(App.Vector(250,20,0))
+	points.append(App.Vector(250,880,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 186))
+	del points[:]
+	comp35 = doc.addObject("Part::Feature", "C35")
+	comp35.Shape = body
+	Draft.move(doc.getObject("C35"),FreeCAD.Vector(1643,-3018,508),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyPlan
+try:
+	points.append(App.Vector(950,61,0))
+	points.append(App.Vector(950,-29,0))
+	points.append(App.Vector(1040,-29,0))
+	points.append(App.Vector(1040,61,0))
+	points.append(App.Vector(950,61,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, 1159))
+	del points[:]
+	comp36 = doc.addObject("Part::Feature", "C36")
+	comp36.Shape = body
+	Draft.move(doc.getObject("C36"),FreeCAD.Vector(1643,-3018,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(760,-2232.41,0))
+	points.append(App.Vector(760,-1908.98,0))
+	points.append(App.Vector(730,-1908.98,0))
+	points.append(App.Vector(35,-2409.38,0))
+	points.append(App.Vector(35,-2732.81,0))
+	points.append(App.Vector(65,-2732.81,0))
+	points.append(App.Vector(760,-2232.41,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp37 = doc.addObject("Part::Feature", "C37")
+	comp37.Shape = body
+	Draft.rotate(doc.getObject("C37"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C37"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C37"),FreeCAD.Vector(0,-868,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(1219,-1152.41,0))
+	points.append(App.Vector(1219,-828.98,0))
+	points.append(App.Vector(1189,-828.98,0))
+	points.append(App.Vector(-1,-1685.78,0))
+	points.append(App.Vector(-1,-2009.21,0))
+	points.append(App.Vector(29,-2009.21,0))
+	points.append(App.Vector(1219,-1152.41,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp38 = doc.addObject("Part::Feature", "C38")
+	comp38.Shape = body
+	Draft.rotate(doc.getObject("C38"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C38"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C38"),FreeCAD.Vector(791,-900,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(853,-990,0))
+	points.append(App.Vector(853,-900,0))
+	points.append(App.Vector(15,-900,0))
+	points.append(App.Vector(15,-990,0))
+	points.append(App.Vector(853,-990,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp39 = doc.addObject("Part::Feature", "C39")
+	comp39.Shape = body
+	Draft.rotate(doc.getObject("C39"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C39"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C39"),FreeCAD.Vector(727,-2134,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(869,-990,0))
+	points.append(App.Vector(869,-900,0))
+	points.append(App.Vector(31,-900,0))
+	points.append(App.Vector(31,-990,0))
+	points.append(App.Vector(869,-990,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp40 = doc.addObject("Part::Feature", "C40")
+	comp40.Shape = body
+	Draft.rotate(doc.getObject("C40"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C40"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C40"),FreeCAD.Vector(759,-3050,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(980,-256.01,0))
+	points.append(App.Vector(980,0,0))
+	points.append(App.Vector(856.36,0,0))
+	points.append(App.Vector(15,-605.78,0))
+	points.append(App.Vector(15,-929.21,0))
+	points.append(App.Vector(45,-929.21,0))
+	points.append(App.Vector(980,-256.01,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp41 = doc.addObject("Part::Feature", "C41")
+	comp41.Shape = body
+	Draft.rotate(doc.getObject("C41"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C41"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C41"),FreeCAD.Vector(1643,-3050,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(985.57,-2070,0))
+	points.append(App.Vector(985.57,-1980,0))
+	points.append(App.Vector(775,-1980,0))
+	points.append(App.Vector(775,-1876.58,0))
+	points.append(App.Vector(0,-2434.58,0))
+	points.append(App.Vector(0,-2682,0))
+	points.append(App.Vector(-25,-2682,0))
+	points.append(App.Vector(-25,-2790,0))
+	points.append(App.Vector(-14.43,-2790,0))
+	points.append(App.Vector(985.57,-2070,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp42 = doc.addObject("Part::Feature", "C42")
+	comp42.Shape = body
+	Draft.rotate(doc.getObject("C42"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C42"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C42"),FreeCAD.Vector(0,0,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(884,-2070,0))
+	points.append(App.Vector(884,-1980,0))
+	points.append(App.Vector(210.57,-1980,0))
+	points.append(App.Vector(210.57,-2070,0))
+	points.append(App.Vector(884,-2070,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp43 = doc.addObject("Part::Feature", "C43")
+	comp43.Shape = body
+	Draft.rotate(doc.getObject("C43"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C43"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C43"),FreeCAD.Vector(775,0,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(824,-2070,0))
+	points.append(App.Vector(824,-1980,0))
+	points.append(App.Vector(32,-1980,0))
+	points.append(App.Vector(32,-2070,0))
+	points.append(App.Vector(824,-2070,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp44 = doc.addObject("Part::Feature", "C44")
+	comp44.Shape = body
+	Draft.rotate(doc.getObject("C44"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C44"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C44"),FreeCAD.Vector(1659,0,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(1266,-1130.09,0))
+	points.append(App.Vector(1266,-785.06,0))
+	points.append(App.Vector(-60,-1739.78,0))
+	points.append(App.Vector(-60,-2070,0))
+	points.append(App.Vector(-39.43,-2070,0))
+	points.append(App.Vector(1266,-1130.09,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp45 = doc.addObject("Part::Feature", "C45")
+	comp45.Shape = body
+	Draft.rotate(doc.getObject("C45"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C45"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C45"),FreeCAD.Vector(1659,-884,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(1044,-198.41,0))
+	points.append(App.Vector(1044,0,0))
+	points.append(App.Vector(840.36,0,0))
+	points.append(App.Vector(0,-605.06,0))
+	points.append(App.Vector(0,-950.09,0))
+	points.append(App.Vector(1044,-198.41,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -32))
+	del points[:]
+	comp46 = doc.addObject("Part::Feature", "C46")
+	comp46.Shape = body
+	Draft.rotate(doc.getObject("C46"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C46"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C46"),FreeCAD.Vector(1659,-2118,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-955,-1785.6,0))
+	points.append(App.Vector(-50,-1134,0))
+	points.append(App.Vector(-50,-1060.07,0))
+	points.append(App.Vector(-955,-1711.67,0))
+	points.append(App.Vector(-955,-1785.6,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -56))
+	del points[:]
+	comp47 = doc.addObject("Part::Feature", "C47")
+	comp47.Shape = body
+	Draft.rotate(doc.getObject("C47"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C47"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C47"),FreeCAD.Vector(2643,-2974,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-955,-951.39,0))
+	points.append(App.Vector(-50,-299.79,0))
+	points.append(App.Vector(-50,-277.61,0))
+	points.append(App.Vector(-955,-929.21,0))
+	points.append(App.Vector(-955,-951.39,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -64))
+	del points[:]
+	comp48 = doc.addObject("Part::Feature", "C48")
+	comp48.Shape = body
+	Draft.rotate(doc.getObject("C48"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C48"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C48"),FreeCAD.Vector(2643,-2970,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-344.96,0))
+	points.append(App.Vector(0,-1120.03,0))
+	points.append(App.Vector(42,-1150.27,0))
+	points.append(App.Vector(42,-375.2,0))
+	points.append(App.Vector(0,-344.96,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp49 = doc.addObject("Part::Feature", "C49")
+	comp49.Shape = body
+	Draft.rotate(doc.getObject("C49"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C49"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C49"),FreeCAD.Vector(2520,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-344.96,0))
+	points.append(App.Vector(0,-1120.03,0))
+	points.append(App.Vector(42,-1150.27,0))
+	points.append(App.Vector(42,-375.2,0))
+	points.append(App.Vector(0,-344.96,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp50 = doc.addObject("Part::Feature", "C50")
+	comp50.Shape = body
+	Draft.rotate(doc.getObject("C50"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C50"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C50"),FreeCAD.Vector(2520,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-431,0))
+	points.append(App.Vector(0,-1206.07,0))
+	points.append(App.Vector(42,-1236.31,0))
+	points.append(App.Vector(42,-461.24,0))
+	points.append(App.Vector(0,-431,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp51 = doc.addObject("Part::Feature", "C51")
+	comp51.Shape = body
+	Draft.rotate(doc.getObject("C51"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C51"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C51"),FreeCAD.Vector(2400.5,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-431,0))
+	points.append(App.Vector(0,-1206.07,0))
+	points.append(App.Vector(42,-1236.31,0))
+	points.append(App.Vector(42,-461.24,0))
+	points.append(App.Vector(0,-431,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp52 = doc.addObject("Part::Feature", "C52")
+	comp52.Shape = body
+	Draft.rotate(doc.getObject("C52"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C52"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C52"),FreeCAD.Vector(2400.5,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-517.04,0))
+	points.append(App.Vector(0,-1292.11,0))
+	points.append(App.Vector(42,-1322.35,0))
+	points.append(App.Vector(42,-547.28,0))
+	points.append(App.Vector(0,-517.04,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp53 = doc.addObject("Part::Feature", "C53")
+	comp53.Shape = body
+	Draft.rotate(doc.getObject("C53"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C53"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C53"),FreeCAD.Vector(2281,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-517.04,0))
+	points.append(App.Vector(0,-1292.11,0))
+	points.append(App.Vector(42,-1322.35,0))
+	points.append(App.Vector(42,-547.28,0))
+	points.append(App.Vector(0,-517.04,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp54 = doc.addObject("Part::Feature", "C54")
+	comp54.Shape = body
+	Draft.rotate(doc.getObject("C54"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C54"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C54"),FreeCAD.Vector(2281,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-603.08,0))
+	points.append(App.Vector(0,-1378.15,0))
+	points.append(App.Vector(42,-1408.39,0))
+	points.append(App.Vector(42,-633.32,0))
+	points.append(App.Vector(0,-603.08,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp55 = doc.addObject("Part::Feature", "C55")
+	comp55.Shape = body
+	Draft.rotate(doc.getObject("C55"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C55"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C55"),FreeCAD.Vector(2161.5,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-603.08,0))
+	points.append(App.Vector(0,-1378.15,0))
+	points.append(App.Vector(42,-1408.39,0))
+	points.append(App.Vector(42,-633.32,0))
+	points.append(App.Vector(0,-603.08,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp56 = doc.addObject("Part::Feature", "C56")
+	comp56.Shape = body
+	Draft.rotate(doc.getObject("C56"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C56"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C56"),FreeCAD.Vector(2161.5,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-689.12,0))
+	points.append(App.Vector(0,-1464.19,0))
+	points.append(App.Vector(42,-1494.43,0))
+	points.append(App.Vector(42,-719.36,0))
+	points.append(App.Vector(0,-689.12,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp57 = doc.addObject("Part::Feature", "C57")
+	comp57.Shape = body
+	Draft.rotate(doc.getObject("C57"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C57"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C57"),FreeCAD.Vector(2042,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-689.12,0))
+	points.append(App.Vector(0,-1464.19,0))
+	points.append(App.Vector(42,-1494.43,0))
+	points.append(App.Vector(42,-719.36,0))
+	points.append(App.Vector(0,-689.12,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp58 = doc.addObject("Part::Feature", "C58")
+	comp58.Shape = body
+	Draft.rotate(doc.getObject("C58"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C58"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C58"),FreeCAD.Vector(2042,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-775.16,0))
+	points.append(App.Vector(0,-1550.23,0))
+	points.append(App.Vector(42,-1580.47,0))
+	points.append(App.Vector(42,-805.4,0))
+	points.append(App.Vector(0,-775.16,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp59 = doc.addObject("Part::Feature", "C59")
+	comp59.Shape = body
+	Draft.rotate(doc.getObject("C59"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C59"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C59"),FreeCAD.Vector(1922.5,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-775.16,0))
+	points.append(App.Vector(0,-1550.23,0))
+	points.append(App.Vector(42,-1580.47,0))
+	points.append(App.Vector(42,-805.4,0))
+	points.append(App.Vector(0,-775.16,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp60 = doc.addObject("Part::Feature", "C60")
+	comp60.Shape = body
+	Draft.rotate(doc.getObject("C60"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C60"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C60"),FreeCAD.Vector(1922.5,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-861.2,0))
+	points.append(App.Vector(0,-1636.27,0))
+	points.append(App.Vector(42,-1666.51,0))
+	points.append(App.Vector(42,-891.44,0))
+	points.append(App.Vector(0,-861.2,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp61 = doc.addObject("Part::Feature", "C61")
+	comp61.Shape = body
+	Draft.rotate(doc.getObject("C61"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C61"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C61"),FreeCAD.Vector(1803,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-861.2,0))
+	points.append(App.Vector(0,-1636.27,0))
+	points.append(App.Vector(42,-1666.51,0))
+	points.append(App.Vector(42,-891.44,0))
+	points.append(App.Vector(0,-861.2,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp62 = doc.addObject("Part::Feature", "C62")
+	comp62.Shape = body
+	Draft.rotate(doc.getObject("C62"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C62"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C62"),FreeCAD.Vector(1803,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-823,-1800,0))
+	points.append(App.Vector(-45,-1800,0))
+	points.append(App.Vector(-45,-1740,0))
+	points.append(App.Vector(-823,-1740,0))
+	points.append(App.Vector(-823,-1800,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -56))
+	del points[:]
+	comp63 = doc.addObject("Part::Feature", "C63")
+	comp63.Shape = body
+	Draft.rotate(doc.getObject("C63"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C63"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C63"),FreeCAD.Vector(1643,-2974,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-823,-1008,0))
+	points.append(App.Vector(-45,-1008,0))
+	points.append(App.Vector(-45,-990,0))
+	points.append(App.Vector(-823,-990,0))
+	points.append(App.Vector(-823,-1008,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -64))
+	del points[:]
+	comp64 = doc.addObject("Part::Feature", "C64")
+	comp64.Shape = body
+	Draft.rotate(doc.getObject("C64"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C64"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C64"),FreeCAD.Vector(1643,-2970,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp65 = doc.addObject("Part::Feature", "C65")
+	comp65.Shape = body
+	Draft.rotate(doc.getObject("C65"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C65"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C65"),FreeCAD.Vector(1526.07,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp66 = doc.addObject("Part::Feature", "C66")
+	comp66.Shape = body
+	Draft.rotate(doc.getObject("C66"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C66"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C66"),FreeCAD.Vector(1526.07,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp67 = doc.addObject("Part::Feature", "C67")
+	comp67.Shape = body
+	Draft.rotate(doc.getObject("C67"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C67"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C67"),FreeCAD.Vector(1407.64,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp68 = doc.addObject("Part::Feature", "C68")
+	comp68.Shape = body
+	Draft.rotate(doc.getObject("C68"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C68"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C68"),FreeCAD.Vector(1407.64,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp69 = doc.addObject("Part::Feature", "C69")
+	comp69.Shape = body
+	Draft.rotate(doc.getObject("C69"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C69"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C69"),FreeCAD.Vector(1289.21,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp70 = doc.addObject("Part::Feature", "C70")
+	comp70.Shape = body
+	Draft.rotate(doc.getObject("C70"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C70"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C70"),FreeCAD.Vector(1289.21,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp71 = doc.addObject("Part::Feature", "C71")
+	comp71.Shape = body
+	Draft.rotate(doc.getObject("C71"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C71"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C71"),FreeCAD.Vector(1170.78,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp72 = doc.addObject("Part::Feature", "C72")
+	comp72.Shape = body
+	Draft.rotate(doc.getObject("C72"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C72"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C72"),FreeCAD.Vector(1170.78,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp73 = doc.addObject("Part::Feature", "C73")
+	comp73.Shape = body
+	Draft.rotate(doc.getObject("C73"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C73"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C73"),FreeCAD.Vector(1052.35,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp74 = doc.addObject("Part::Feature", "C74")
+	comp74.Shape = body
+	Draft.rotate(doc.getObject("C74"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C74"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C74"),FreeCAD.Vector(1052.35,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp75 = doc.addObject("Part::Feature", "C75")
+	comp75.Shape = body
+	Draft.rotate(doc.getObject("C75"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C75"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C75"),FreeCAD.Vector(933.92,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp76 = doc.addObject("Part::Feature", "C76")
+	comp76.Shape = body
+	Draft.rotate(doc.getObject("C76"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C76"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C76"),FreeCAD.Vector(933.92,-3023,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-823,-1800,0))
+	points.append(App.Vector(-45,-1800,0))
+	points.append(App.Vector(-45,-1740,0))
+	points.append(App.Vector(-823,-1740,0))
+	points.append(App.Vector(-823,-1800,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -56))
+	del points[:]
+	comp77 = doc.addObject("Part::Feature", "C77")
+	comp77.Shape = body
+	Draft.rotate(doc.getObject("C77"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C77"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C77"),FreeCAD.Vector(803,-3002,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-823,-1008,0))
+	points.append(App.Vector(-45,-1008,0))
+	points.append(App.Vector(-45,-990,0))
+	points.append(App.Vector(-823,-990,0))
+	points.append(App.Vector(-823,-1008,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -64))
+	del points[:]
+	comp78 = doc.addObject("Part::Feature", "C78")
+	comp78.Shape = body
+	Draft.rotate(doc.getObject("C78"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C78"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C78"),FreeCAD.Vector(807,-3002,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp79 = doc.addObject("Part::Feature", "C79")
+	comp79.Shape = body
+	Draft.rotate(doc.getObject("C79"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C79"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C79"),FreeCAD.Vector(754,-2885.07,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp80 = doc.addObject("Part::Feature", "C80")
+	comp80.Shape = body
+	Draft.rotate(doc.getObject("C80"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C80"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C80"),FreeCAD.Vector(754,-2885.07,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp81 = doc.addObject("Part::Feature", "C81")
+	comp81.Shape = body
+	Draft.rotate(doc.getObject("C81"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C81"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C81"),FreeCAD.Vector(754,-2766.64,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp82 = doc.addObject("Part::Feature", "C82")
+	comp82.Shape = body
+	Draft.rotate(doc.getObject("C82"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C82"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C82"),FreeCAD.Vector(754,-2766.64,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp83 = doc.addObject("Part::Feature", "C83")
+	comp83.Shape = body
+	Draft.rotate(doc.getObject("C83"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C83"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C83"),FreeCAD.Vector(754,-2648.21,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp84 = doc.addObject("Part::Feature", "C84")
+	comp84.Shape = body
+	Draft.rotate(doc.getObject("C84"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C84"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C84"),FreeCAD.Vector(754,-2648.21,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp85 = doc.addObject("Part::Feature", "C85")
+	comp85.Shape = body
+	Draft.rotate(doc.getObject("C85"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C85"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C85"),FreeCAD.Vector(754,-2529.78,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp86 = doc.addObject("Part::Feature", "C86")
+	comp86.Shape = body
+	Draft.rotate(doc.getObject("C86"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C86"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C86"),FreeCAD.Vector(754,-2529.78,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp87 = doc.addObject("Part::Feature", "C87")
+	comp87.Shape = body
+	Draft.rotate(doc.getObject("C87"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C87"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C87"),FreeCAD.Vector(754,-2411.35,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp88 = doc.addObject("Part::Feature", "C88")
+	comp88.Shape = body
+	Draft.rotate(doc.getObject("C88"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C88"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C88"),FreeCAD.Vector(754,-2411.35,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp89 = doc.addObject("Part::Feature", "C89")
+	comp89.Shape = body
+	Draft.rotate(doc.getObject("C89"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C89"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C89"),FreeCAD.Vector(754,-2292.92,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1002,0))
+	points.append(App.Vector(0,-1746,0))
+	points.append(App.Vector(42,-1746,0))
+	points.append(App.Vector(42,-1002,0))
+	points.append(App.Vector(0,-1002,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp90 = doc.addObject("Part::Feature", "C90")
+	comp90.Shape = body
+	Draft.rotate(doc.getObject("C90"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C90"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C90"),FreeCAD.Vector(754,-2292.92,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-1205,-2865.6,0))
+	points.append(App.Vector(-45,-2030.4,0))
+	points.append(App.Vector(-45,-1956.47,0))
+	points.append(App.Vector(-1205,-2791.67,0))
+	points.append(App.Vector(-1205,-2865.6,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -56))
+	del points[:]
+	comp91 = doc.addObject("Part::Feature", "C91")
+	comp91.Shape = body
+	Draft.rotate(doc.getObject("C91"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C91"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C91"),FreeCAD.Vector(803,-2134,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-1205,-2031.39,0))
+	points.append(App.Vector(-45,-1196.19,0))
+	points.append(App.Vector(-45,-1174.01,0))
+	points.append(App.Vector(-1205,-2009.21,0))
+	points.append(App.Vector(-1205,-2031.39,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -64))
+	del points[:]
+	comp92 = doc.addObject("Part::Feature", "C92")
+	comp92.Shape = body
+	Draft.rotate(doc.getObject("C92"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C92"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C92"),FreeCAD.Vector(807,-2134,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1242.51,0))
+	points.append(App.Vector(0,-2017.58,0))
+	points.append(App.Vector(42,-2047.82,0))
+	points.append(App.Vector(42,-1272.75,0))
+	points.append(App.Vector(0,-1242.51,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp93 = doc.addObject("Part::Feature", "C93")
+	comp93.Shape = body
+	Draft.rotate(doc.getObject("C93"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C93"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C93"),FreeCAD.Vector(754,-2014.4,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1242.51,0))
+	points.append(App.Vector(0,-2017.58,0))
+	points.append(App.Vector(42,-2047.82,0))
+	points.append(App.Vector(42,-1272.75,0))
+	points.append(App.Vector(0,-1242.51,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp94 = doc.addObject("Part::Feature", "C94")
+	comp94.Shape = body
+	Draft.rotate(doc.getObject("C94"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C94"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C94"),FreeCAD.Vector(754,-2014.4,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1329.7,0))
+	points.append(App.Vector(0,-2104.77,0))
+	points.append(App.Vector(42,-2135.01,0))
+	points.append(App.Vector(42,-1359.94,0))
+	points.append(App.Vector(0,-1329.7,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp95 = doc.addObject("Part::Feature", "C95")
+	comp95.Shape = body
+	Draft.rotate(doc.getObject("C95"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C95"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C95"),FreeCAD.Vector(754,-1893.3,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1329.7,0))
+	points.append(App.Vector(0,-2104.77,0))
+	points.append(App.Vector(42,-2135.01,0))
+	points.append(App.Vector(42,-1359.94,0))
+	points.append(App.Vector(0,-1329.7,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp96 = doc.addObject("Part::Feature", "C96")
+	comp96.Shape = body
+	Draft.rotate(doc.getObject("C96"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C96"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C96"),FreeCAD.Vector(754,-1893.3,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1416.89,0))
+	points.append(App.Vector(0,-2191.96,0))
+	points.append(App.Vector(42,-2222.2,0))
+	points.append(App.Vector(42,-1447.13,0))
+	points.append(App.Vector(0,-1416.89,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp97 = doc.addObject("Part::Feature", "C97")
+	comp97.Shape = body
+	Draft.rotate(doc.getObject("C97"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C97"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C97"),FreeCAD.Vector(754,-1772.2,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1416.89,0))
+	points.append(App.Vector(0,-2191.96,0))
+	points.append(App.Vector(42,-2222.2,0))
+	points.append(App.Vector(42,-1447.13,0))
+	points.append(App.Vector(0,-1416.89,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp98 = doc.addObject("Part::Feature", "C98")
+	comp98.Shape = body
+	Draft.rotate(doc.getObject("C98"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C98"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C98"),FreeCAD.Vector(754,-1772.2,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1504.08,0))
+	points.append(App.Vector(0,-2279.16,0))
+	points.append(App.Vector(42,-2309.4,0))
+	points.append(App.Vector(42,-1534.32,0))
+	points.append(App.Vector(0,-1504.08,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp99 = doc.addObject("Part::Feature", "C99")
+	comp99.Shape = body
+	Draft.rotate(doc.getObject("C99"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C99"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C99"),FreeCAD.Vector(754,-1651.1,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1504.08,0))
+	points.append(App.Vector(0,-2279.16,0))
+	points.append(App.Vector(42,-2309.4,0))
+	points.append(App.Vector(42,-1534.32,0))
+	points.append(App.Vector(0,-1504.08,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp100 = doc.addObject("Part::Feature", "C100")
+	comp100.Shape = body
+	Draft.rotate(doc.getObject("C100"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C100"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C100"),FreeCAD.Vector(754,-1651.1,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1591.27,0))
+	points.append(App.Vector(0,-2366.35,0))
+	points.append(App.Vector(42,-2396.59,0))
+	points.append(App.Vector(42,-1621.51,0))
+	points.append(App.Vector(0,-1591.27,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp101 = doc.addObject("Part::Feature", "C101")
+	comp101.Shape = body
+	Draft.rotate(doc.getObject("C101"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C101"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C101"),FreeCAD.Vector(754,-1530,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1591.27,0))
+	points.append(App.Vector(0,-2366.35,0))
+	points.append(App.Vector(42,-2396.59,0))
+	points.append(App.Vector(42,-1621.51,0))
+	points.append(App.Vector(0,-1591.27,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp102 = doc.addObject("Part::Feature", "C102")
+	comp102.Shape = body
+	Draft.rotate(doc.getObject("C102"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C102"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C102"),FreeCAD.Vector(754,-1530,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1678.46,0))
+	points.append(App.Vector(0,-2453.54,0))
+	points.append(App.Vector(42,-2483.78,0))
+	points.append(App.Vector(42,-1708.7,0))
+	points.append(App.Vector(0,-1678.46,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp103 = doc.addObject("Part::Feature", "C103")
+	comp103.Shape = body
+	Draft.rotate(doc.getObject("C103"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C103"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C103"),FreeCAD.Vector(754,-1408.9,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1678.46,0))
+	points.append(App.Vector(0,-2453.54,0))
+	points.append(App.Vector(42,-2483.78,0))
+	points.append(App.Vector(42,-1708.7,0))
+	points.append(App.Vector(0,-1678.46,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp104 = doc.addObject("Part::Feature", "C104")
+	comp104.Shape = body
+	Draft.rotate(doc.getObject("C104"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C104"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C104"),FreeCAD.Vector(754,-1408.9,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1765.65,0))
+	points.append(App.Vector(0,-2540.73,0))
+	points.append(App.Vector(42,-2570.97,0))
+	points.append(App.Vector(42,-1795.89,0))
+	points.append(App.Vector(0,-1765.65,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp105 = doc.addObject("Part::Feature", "C105")
+	comp105.Shape = body
+	Draft.rotate(doc.getObject("C105"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C105"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C105"),FreeCAD.Vector(754,-1287.8,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1765.65,0))
+	points.append(App.Vector(0,-2540.73,0))
+	points.append(App.Vector(42,-2570.97,0))
+	points.append(App.Vector(42,-1795.89,0))
+	points.append(App.Vector(0,-1765.65,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp106 = doc.addObject("Part::Feature", "C106")
+	comp106.Shape = body
+	Draft.rotate(doc.getObject("C106"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C106"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C106"),FreeCAD.Vector(754,-1287.8,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1852.85,0))
+	points.append(App.Vector(0,-2627.93,0))
+	points.append(App.Vector(42,-2658.17,0))
+	points.append(App.Vector(42,-1883.08,0))
+	points.append(App.Vector(0,-1852.85,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp107 = doc.addObject("Part::Feature", "C107")
+	comp107.Shape = body
+	Draft.rotate(doc.getObject("C107"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C107"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C107"),FreeCAD.Vector(754,-1166.7,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1852.85,0))
+	points.append(App.Vector(0,-2627.93,0))
+	points.append(App.Vector(42,-2658.17,0))
+	points.append(App.Vector(42,-1883.08,0))
+	points.append(App.Vector(0,-1852.85,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp108 = doc.addObject("Part::Feature", "C108")
+	comp108.Shape = body
+	Draft.rotate(doc.getObject("C108"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C108"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C108"),FreeCAD.Vector(754,-1166.7,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1940.04,0))
+	points.append(App.Vector(0,-2715.12,0))
+	points.append(App.Vector(42,-2745.36,0))
+	points.append(App.Vector(42,-1970.28,0))
+	points.append(App.Vector(0,-1940.04,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp109 = doc.addObject("Part::Feature", "C109")
+	comp109.Shape = body
+	Draft.rotate(doc.getObject("C109"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C109"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C109"),FreeCAD.Vector(754,-1045.6,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-1940.04,0))
+	points.append(App.Vector(0,-2715.12,0))
+	points.append(App.Vector(42,-2745.36,0))
+	points.append(App.Vector(42,-1970.28,0))
+	points.append(App.Vector(0,-1940.04,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp110 = doc.addObject("Part::Feature", "C110")
+	comp110.Shape = body
+	Draft.rotate(doc.getObject("C110"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C110"),-270,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C110"),FreeCAD.Vector(754,-1045.6,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-710,-3589.2,0))
+	points.append(App.Vector(-45,-3110.4,0))
+	points.append(App.Vector(-45,-3036.47,0))
+	points.append(App.Vector(-710,-3515.27,0))
+	points.append(App.Vector(-710,-3589.2,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -56))
+	del points[:]
+	comp111 = doc.addObject("Part::Feature", "C111")
+	comp111.Shape = body
+	Draft.rotate(doc.getObject("C111"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C111"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C111"),FreeCAD.Vector(775,-856,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(-710,-2754.99,0))
+	points.append(App.Vector(-45,-2276.19,0))
+	points.append(App.Vector(-45,-2254.01,0))
+	points.append(App.Vector(-710,-2732.81,0))
+	points.append(App.Vector(-710,-2754.99,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -64))
+	del points[:]
+	comp112 = doc.addObject("Part::Feature", "C112")
+	comp112.Shape = body
+	Draft.rotate(doc.getObject("C112"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C112"),0,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C112"),FreeCAD.Vector(775,-852,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2321.24,0))
+	points.append(App.Vector(0,-3096.31,0))
+	points.append(App.Vector(42,-3126.55,0))
+	points.append(App.Vector(42,-2351.48,0))
+	points.append(App.Vector(0,-2321.24,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp113 = doc.addObject("Part::Feature", "C113")
+	comp113.Shape = body
+	Draft.rotate(doc.getObject("C113"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C113"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C113"),FreeCAD.Vector(657.17,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2321.24,0))
+	points.append(App.Vector(0,-3096.31,0))
+	points.append(App.Vector(42,-3126.55,0))
+	points.append(App.Vector(42,-2351.48,0))
+	points.append(App.Vector(0,-2321.24,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp114 = doc.addObject("Part::Feature", "C114")
+	comp114.Shape = body
+	Draft.rotate(doc.getObject("C114"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C114"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C114"),FreeCAD.Vector(657.17,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2407.15,0))
+	points.append(App.Vector(0,-3182.23,0))
+	points.append(App.Vector(42,-3212.47,0))
+	points.append(App.Vector(42,-2437.39,0))
+	points.append(App.Vector(0,-2407.15,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp115 = doc.addObject("Part::Feature", "C115")
+	comp115.Shape = body
+	Draft.rotate(doc.getObject("C115"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C115"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C115"),FreeCAD.Vector(537.84,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2407.15,0))
+	points.append(App.Vector(0,-3182.23,0))
+	points.append(App.Vector(42,-3212.47,0))
+	points.append(App.Vector(42,-2437.39,0))
+	points.append(App.Vector(0,-2407.15,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp116 = doc.addObject("Part::Feature", "C116")
+	comp116.Shape = body
+	Draft.rotate(doc.getObject("C116"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C116"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C116"),FreeCAD.Vector(537.84,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2493.07,0))
+	points.append(App.Vector(0,-3268.15,0))
+	points.append(App.Vector(42,-3298.39,0))
+	points.append(App.Vector(42,-2523.31,0))
+	points.append(App.Vector(0,-2493.07,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp117 = doc.addObject("Part::Feature", "C117")
+	comp117.Shape = body
+	Draft.rotate(doc.getObject("C117"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C117"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C117"),FreeCAD.Vector(418.51,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2493.07,0))
+	points.append(App.Vector(0,-3268.15,0))
+	points.append(App.Vector(42,-3298.39,0))
+	points.append(App.Vector(42,-2523.31,0))
+	points.append(App.Vector(0,-2493.07,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp118 = doc.addObject("Part::Feature", "C118")
+	comp118.Shape = body
+	Draft.rotate(doc.getObject("C118"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C118"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C118"),FreeCAD.Vector(418.51,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2578.99,0))
+	points.append(App.Vector(0,-3354.06,0))
+	points.append(App.Vector(42,-3384.3,0))
+	points.append(App.Vector(42,-2609.23,0))
+	points.append(App.Vector(0,-2578.99,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp119 = doc.addObject("Part::Feature", "C119")
+	comp119.Shape = body
+	Draft.rotate(doc.getObject("C119"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C119"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C119"),FreeCAD.Vector(299.18,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2578.99,0))
+	points.append(App.Vector(0,-3354.06,0))
+	points.append(App.Vector(42,-3384.3,0))
+	points.append(App.Vector(42,-2609.23,0))
+	points.append(App.Vector(0,-2578.99,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp120 = doc.addObject("Part::Feature", "C120")
+	comp120.Shape = body
+	Draft.rotate(doc.getObject("C120"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C120"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C120"),FreeCAD.Vector(299.18,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2664.9,0))
+	points.append(App.Vector(0,-3439.98,0))
+	points.append(App.Vector(42,-3470.22,0))
+	points.append(App.Vector(42,-2695.14,0))
+	points.append(App.Vector(0,-2664.9,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp121 = doc.addObject("Part::Feature", "C121")
+	comp121.Shape = body
+	Draft.rotate(doc.getObject("C121"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C121"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C121"),FreeCAD.Vector(179.85,-905,0),copy=False)
+except:
+	pass
+#=============================================== NEW FreeCadPolyElev
+try:
+	points.append(App.Vector(0,-2664.9,0))
+	points.append(App.Vector(0,-3439.98,0))
+	points.append(App.Vector(42,-3470.22,0))
+	points.append(App.Vector(42,-2695.14,0))
+	points.append(App.Vector(0,-2664.9,0))
+	polygon = Part.makePolygon(points)
+	surface = Part.Face(polygon)
+	body = surface.extrude(App.Vector(0, 0, -42))
+	del points[:]
+	comp122 = doc.addObject("Part::Feature", "C122")
+	comp122.Shape = body
+	Draft.rotate(doc.getObject("C122"),-90,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(1,0,0),copy=False)
+	Draft.rotate(doc.getObject("C122"),-180,FreeCAD.Vector(0,0,0),axis=FreeCAD.Vector(0,0,1),copy=False)
+	Draft.move(doc.getObject("C122"),FreeCAD.Vector(179.85,-905,0),copy=False)
+except:
+	pass
+doc.recompute()
+# Macro End: zz5.FCMacro

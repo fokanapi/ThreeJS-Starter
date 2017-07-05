@@ -26,6 +26,7 @@
     "rxjs": "^5.1.0",
     "three": "^0.86.0",
     "three-orbit-controls": "^82.1.0",
+    "three-stl-loader": "^1.0.5",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

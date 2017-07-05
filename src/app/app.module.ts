@@ -11,6 +11,7 @@ import { BoxComponent } from './box/box.component';
 import { BaseComponent } from './base/base.component';
 import { TextComponent } from './text/text.component';
 import { StepsComponent } from './steps/steps.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StepsComponent } from './steps/steps.component';
     BoxComponent,
     BaseComponent,
     TextComponent,
-    StepsComponent
+    StepsComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule
