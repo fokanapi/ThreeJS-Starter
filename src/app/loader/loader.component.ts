@@ -31,7 +31,11 @@ export class LoaderComponent implements OnInit {
 
     self.initScene();
     self.animate();
-    console.log(self.scene);
+    //console.log(self.scene);
+    
+    // var xxx = self.scene.toJSON();
+    // console.log("self.scene.toJSON", xxx);
+    // console.log(JSON.stringify(xxx));
   }
 
   initScene() {
@@ -49,7 +53,7 @@ export class LoaderComponent implements OnInit {
     self.setMeshes();
 
     self.setLight();
-
+    
   }
 
   setCamera() {
@@ -89,7 +93,7 @@ export class LoaderComponent implements OnInit {
     loader.load('assets/kiks.stl', function (geometry) {
       var material = new THREE.MeshLambertMaterial({ color: 0xa57b4a, shading: THREE.FlatShading, side: THREE.DoubleSide });
       var mesh = new THREE.Mesh(geometry, material);
-
+      console.log("geometry", JSON.stringify(geometry.toJSON()));
       mesh.position.set( 0, 0,-500 );
       mesh.rotation.set( -1.0, 0, -0.7 );
       mesh.scale.set( 0.5, 0.5, 0.5 );
