@@ -14,6 +14,7 @@ import { StepsComponent } from './steps/steps.component';
 import { LoaderComponent } from './loader/loader.component';
 import { BufferGeometryComponent } from './buffer-geometry/buffer-geometry.component';
 import { ShapeComponent } from './shape/shape.component';
+import { ExtrudeComponent } from './extrude/extrude.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ShapeComponent } from './shape/shape.component';
     StepsComponent,
     LoaderComponent,
     BufferGeometryComponent,
-    ShapeComponent
+    ShapeComponent,
+    ExtrudeComponent
   ],
   imports: [
     BrowserModule
