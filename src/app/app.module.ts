@@ -13,6 +13,7 @@ import { TextComponent } from './text/text.component';
 import { StepsComponent } from './steps/steps.component';
 import { LoaderComponent } from './loader/loader.component';
 import { BufferGeometryComponent } from './buffer-geometry/buffer-geometry.component';
+import { ShapeComponent } from './shape/shape.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BufferGeometryComponent } from './buffer-geometry/buffer-geometry.compo
     TextComponent,
     StepsComponent,
     LoaderComponent,
-    BufferGeometryComponent
+    BufferGeometryComponent,
+    ShapeComponent
   ],
   imports: [
     BrowserModule
