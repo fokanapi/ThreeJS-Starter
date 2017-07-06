@@ -31,7 +31,7 @@ export class BufferGeometryComponent implements OnInit {
   initScene() {
     let self = this;
     self.scene = new THREE.Scene();
-
+    self.scene.background = new THREE.Color(0xffffff);
     self.setCamera();
     self.setCameraControl();
 

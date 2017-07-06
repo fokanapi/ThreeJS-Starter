@@ -31,7 +31,8 @@ export class ShapeComponent implements OnInit {
   initScene() {
     let self = this;
     self.scene = new THREE.Scene();
-
+    self.scene.background = new THREE.Color(0xffffff);
+    
     self.setCamera();
     self.setCameraControl();
 
@@ -139,9 +140,10 @@ export class ShapeComponent implements OnInit {
     };
 
     var geometry = new THREE.ExtrudeGeometry(heartShape, extrudeSettings);
-    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: false });
+    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
     var mesh = new THREE.Mesh(geometry, material);
     mesh.rotation.x = 3;
+    mesh.rotation.y = 1;
     self.scene.add(mesh);
   }
 
