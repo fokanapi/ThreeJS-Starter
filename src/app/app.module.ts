@@ -15,6 +15,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { BufferGeometryComponent } from './buffer-geometry/buffer-geometry.component';
 import { ShapeComponent } from './shape/shape.component';
 import { ExtrudeComponent } from './extrude/extrude.component';
+import { FcmacroComponent } from './fcmacro/fcmacro.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ExtrudeComponent } from './extrude/extrude.component';
     LoaderComponent,
     BufferGeometryComponent,
     ShapeComponent,
-    ExtrudeComponent
+    ExtrudeComponent,
+    FcmacroComponent
   ],
   imports: [
     BrowserModule
