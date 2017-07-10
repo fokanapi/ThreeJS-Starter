@@ -16,6 +16,7 @@ import { BufferGeometryComponent } from './buffer-geometry/buffer-geometry.compo
 import { ShapeComponent } from './shape/shape.component';
 import { ExtrudeComponent } from './extrude/extrude.component';
 import { FcmacroComponent } from './fcmacro/fcmacro.component';
+import { StraightWithBullnoseComponent } from './straight-with-bullnose/straight-with-bullnose.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FcmacroComponent } from './fcmacro/fcmacro.component';
     BufferGeometryComponent,
     ShapeComponent,
     ExtrudeComponent,
-    FcmacroComponent
+    FcmacroComponent,
+    StraightWithBullnoseComponent
   ],
   imports: [
     BrowserModule

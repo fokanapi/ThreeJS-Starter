@@ -70,7 +70,8 @@ export class LoaderComponent implements OnInit {
 
   setRenderer() {
     let self = this;
-    self.renderer = new THREE.WebGLRenderer();
+    self.renderer = new THREE.WebGLRenderer({antialias: true});
+    //self.renderer = new THREE.CanvasRenderer();
     self.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
