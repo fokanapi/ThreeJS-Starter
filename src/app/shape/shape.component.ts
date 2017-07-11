@@ -68,6 +68,7 @@ export class ShapeComponent implements OnInit {
     //self.addMeshHeart();
     self.addMeshExtrudeHeart();
     self.addMeshExtrudeBoxShape();
+    self.addMeshExtrudeArc();
   }
 
   addMeshExtrudeBoxShape() {
@@ -81,9 +82,9 @@ export class ShapeComponent implements OnInit {
     shape.lineTo(0, 0);
 
     var extrudeSettings = {
-      steps: 4,
+      steps: 1,
       amount: 12,
-      bevelEnabled: true,
+      bevelEnabled: false,
       bevelThickness: 1,
       bevelSize: 1,
       bevelSegments: 1
@@ -113,6 +114,7 @@ export class ShapeComponent implements OnInit {
     var geometry = new THREE.ShapeGeometry(heartShape);
     var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     var mesh = new THREE.Mesh(geometry, material);
+    mesh.position.x = 50;
     self.scene.add(mesh);
   }
 
@@ -144,9 +146,35 @@ export class ShapeComponent implements OnInit {
     var mesh = new THREE.Mesh(geometry, material);
     mesh.rotation.x = 3;
     mesh.rotation.y = 1;
+    mesh.position.x = 50;
     self.scene.add(mesh);
   }
 
+
+addMeshExtrudeArc() {
+    let self = this;
+    var x = 0, y = 0;
+
+    var arcShape = new THREE.Shape();
+
+    arcShape.moveTo(2, 2);
+    arcShape.bezierCurveTo(2,10,15,10,15,2);
+    // arcShape.lineTo(2, 2);
+
+    var extrudeSettings = {
+      steps: 1,
+      amount: 4,
+      bevelEnabled: false,
+      bevelThickness: 1,
+      bevelSize: 1,
+      bevelSegments: 1
+    };
+
+    var geometry = new THREE.ExtrudeGeometry(arcShape, extrudeSettings);
+    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
+    var mesh = new THREE.Mesh(geometry, material);
+    self.scene.add(mesh);
+  }
   addMesh() {
     let self = this;
     let geometry = new THREE.BoxGeometry(3, 3, 1);
