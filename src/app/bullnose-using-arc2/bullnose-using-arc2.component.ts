@@ -4,6 +4,13 @@ import * as _OrbitControls from 'three-orbit-controls';
 let OrbitControls = _OrbitControls(THREE);
 
 
+export class mu3D {
+  x: number;
+  y: number;
+  radius: number;
+  radiansStart: number;
+  radiansEnd: number;
+}
 
 @Component({
   selector: 'app-bullnose-using-arc2',
@@ -11,6 +18,7 @@ let OrbitControls = _OrbitControls(THREE);
   styleUrls: ['./bullnose-using-arc2.component.css']
 })
 export class BullnoseUsingArc2Component implements OnInit {
+
 
   renderer;
   scene;
@@ -112,33 +120,132 @@ export class BullnoseUsingArc2Component implements OnInit {
     this.scene.add(mesh);
   }
 
+  createSmallArc(r: number, rStart: number, rEnd: number): Object {
+    // Compute all four points for an arc that subtends the same total angle
+    // but is centered on the X-axis
+
+    const a: number = (rEnd - rStart) / 2.0;
+
+    const x4: number = r * Math.cos(a);
+    const y4: number = r * Math.sin(a);
+    const x1: number = x4;
+    const y1: number = -y4;
+
+    const q1: number = x1 * x1 + y1 * y1;
+    const q2: number = q1 + x1 * x4 + y1 * y4;
+    const k2: number = 4 / 3 * (Math.sqrt(2 * q1 * q2) - q2) / (x1 * y4 - y1 * x4);
+
+    const x2: number = x1 - k2 * y1;
+    const y2: number = y1 + k2 * x1;
+    const x3: number = x2;
+    const y3: number = -y2;
+
+    // Find the arc points' actual locations by computing x1,y1 and x4,y4 
+    // and rotating the control points by a + rStart
+
+    const ar: number = a + rStart;
+    const cos_ar: number = Math.cos(ar);
+    const sin_ar: number = Math.sin(ar);
+
+    return {
+      x4: r * Math.cos(rStart),
+      y4: r * Math.sin(rStart),
+      x3: x2 * cos_ar - y2 * sin_ar,
+      y3: x2 * sin_ar + y2 * cos_ar,
+      x2: x3 * cos_ar - y3 * sin_ar,
+      y2: x3 * sin_ar + y3 * cos_ar,
+      x1: r * Math.cos(rEnd),
+      y1: r * Math.sin(rEnd)
+    };
+  }
+
+  buildShape(mu3Ds: mu3D[]): THREE.Shape {
+    let self = this;
+    let shape: THREE.Shape;
+    let bezierCount: number = 0;
+    for (var i = 0; i < mu3Ds.length; i++) {
+      let mu3D = mu3Ds[i];
+      if (!shape) {
+        shape = new THREE.Shape();
+        shape.moveTo(mu3D.x, mu3D.y);
+        console.log("shape.moveTo(" + mu3D.x + ", " + mu3D.y + ");");
+      } else {
+        if (!(mu3D.x === mu3Ds[i - 1].x && mu3D.y === mu3Ds[i - 1].y)) {
+          shape.lineTo(mu3D.x, mu3D.y);
+          console.log("shape.moveTo(" + mu3D.x + ", " + mu3D.y + ");");
+        }
+      }
+
+      if (mu3D.radius) {
+        bezierCount++;
+        let bezier: any = self.createSmallArc(mu3D.radius, mu3D.radiansStart, mu3D.radiansEnd);
+        console.log("bezier", bezier);
+        let offsetX2Y1 = Math.round(bezier.y2) - Math.round(bezier.y1);
+        let offsetX1Y2 = Math.round(bezier.x2) - Math.round(bezier.x1);
+        if(bezierCount % 1 === 1){
+          let offset = offsetX1Y2;
+          offsetX1Y2 = offsetX2Y1;
+          offsetX2Y1 = offset;
+        }
+        let xEndPosition: number = mu3Ds[i + 1].x;
+        let yEndPosition: number = mu3Ds[i + 1].y;
+        i += 1;
+        mu3D.y *= -1;
+        yEndPosition *= -1;
+        shape.bezierCurveTo(
+          mu3D.x + offsetX1Y2, mu3D.y + offsetX2Y1
+          , xEndPosition + offsetX2Y1, yEndPosition + offsetX1Y2
+          , xEndPosition, yEndPosition);
+
+        console.log("shape.bezierCurveTo(" + (mu3D.x ) + ", " + (mu3D.y) + ", "
+          + (xEndPosition) + ", " + (yEndPosition ) + ", "
+          + xEndPosition + ", " + yEndPosition + ");");
+
+      }
+    }
+
+    return shape;
+  }
+
+  pushMu3D(mu3Ds: mu3D[],
+    x: number,
+    y: number,
+    radius: number,
+    radiansStart: number,
+    radiansEnd: number): mu3D[] {
+    mu3Ds.push(<mu3D>{ x, y, radius, radiansStart, radiansEnd });
+
+    return mu3Ds;
+  }
+
   addMesh2() {
+    let mu3Ds = [];
+    mu3Ds = this.pushMu3D(mu3Ds, 1020, 1078, 172, 1.57, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 848, 1250, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 848, 1250, 172.5, 3.14159, 1.57079);
+    mu3Ds = this.pushMu3D(mu3Ds, 675, 1077.5, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 675, 1049, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 693, 1049, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 693, 1078, 154.5, 3.14159, 1.57079);
+    mu3Ds = this.pushMu3D(mu3Ds, 848, 1232, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 848, 1232, 154, 1.57, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 1002, 1078, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 1002, 19, 0, 0, 0);
+    mu3Ds = this.pushMu3D(mu3Ds, 1020, 19, 0, 0, 0);
+    //let shape = this.buildShape(mu3Ds);
+    this.buildShape(mu3Ds);
+    console.log(mu3Ds);
     let shape = new THREE.Shape();
 
     shape.moveTo(1020, -1078);
     shape.bezierCurveTo(1020, -1173, 943, -1250, 848, -1250);
-    //*shape.lineTo(848, -1250);
-    // shape.lineTo(847.5, -1250);
-
-    shape.bezierCurveTo(743, -1250, 675, -1173, 675, -1078);
-    //*shape.lineTo(675, -1077.5);
-
+    shape.bezierCurveTo(753, -1250, 675, -1173, 675, -1078);
     shape.lineTo(675, -1049);
-
     shape.lineTo(693, -1049);
-    
     shape.lineTo(693, -1078);
-
     shape.bezierCurveTo(693, -1163, 763, -1232, 848, -1232);
-    
-    shape.lineTo(848, -1232);
-    // shape.lineTo(848, -1232);
-
     shape.bezierCurveTo(933, -1232, 1002, -1163, 1002, -1078);
-    //shape.lineTo(1002, -1078);
-
     shape.lineTo(1002, -19);
-
     shape.lineTo(1020, -19);
 
     var mesh = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { amount: -159 }), this.material);
@@ -323,6 +430,7 @@ export class BullnoseUsingArc2Component implements OnInit {
 
     this.scene.add(mesh);
   }
+
 
 
 }
