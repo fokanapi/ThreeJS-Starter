@@ -17,6 +17,7 @@ import { ShapeComponent } from './shape/shape.component';
 import { ExtrudeComponent } from './extrude/extrude.component';
 import { FcmacroComponent } from './fcmacro/fcmacro.component';
 import { StraightWithBullnoseComponent } from './straight-with-bullnose/straight-with-bullnose.component';
+import { BullnoseUsingArcComponent } from './bullnose-using-arc/bullnose-using-arc.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { StraightWithBullnoseComponent } from './straight-with-bullnose/straight
     ShapeComponent,
     ExtrudeComponent,
     FcmacroComponent,
-    StraightWithBullnoseComponent
+    StraightWithBullnoseComponent,
+    BullnoseUsingArcComponent
   ],
   imports: [
     BrowserModule
